@@ -1,6 +1,9 @@
 package Utils;
 
+import java.awt.Desktop;
 import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
 
 import javax.swing.ImageIcon;
 import javax.swing.UIManager;
@@ -108,6 +111,24 @@ public class Utils {
 				alto, Image.SCALE_SMOOTH));
 	}
 
+	
+	public static void openarch(String archivo){
+		try {
+
+            File objetofile = new File (archivo);
+            Desktop.getDesktop().open(objetofile);
+
+          }catch (IOException ex) {
+
+            System.out.println(ex);
+
+     }
+		
+		
+	}
+	
+	
+	
 	
 	
 	public static void estilo_nimbus() {
