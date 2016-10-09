@@ -136,15 +136,7 @@ public class Principal extends JFrame {
 		}
 	}
 
-	// public String Ruta(String p){
-	// String ruta="";
-	// // for(int i=0;i<p.getPath().length-1;i++){
-	// // ruta=ruta+p.getPath()[i+1]+"\\";
-	// // }
-	//
-	// return ruta;
-	// }
-	//
+	
 
 	public File obtenerRuta(DefaultMutableTreeNode p) {
 		String ruta = "";

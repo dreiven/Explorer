@@ -127,10 +127,6 @@ public class Utils {
 		
 	}
 	
-	
-	
-	
-	
 	public static void estilo_nimbus() {
 
 		// cargar el nuevo look and feel si se puede
@@ -138,7 +134,7 @@ public class Utils {
 		LookAndFeelInfo tabla_laf[] = UIManager.getInstalledLookAndFeels();
 		for (LookAndFeelInfo objeto_aparicencia : tabla_laf) {
 			// COMPROBAMOS SI EXISTE NIMBUS
-			if (objeto_aparicencia.getName().equals("Windows")) {
+			if (objeto_aparicencia.getName().equals("nimbus")) {
 				// CARGAMOS NIMBUS CUANDO EXISTA SEGUN LA VERSION DE JDK
 				// USADA
 				try {
